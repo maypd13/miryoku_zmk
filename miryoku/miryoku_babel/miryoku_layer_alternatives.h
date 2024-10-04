@@ -179,7 +179,7 @@ U_NP,              U_NP,              &kp DEL,           &kp BSPC,          &kp 
 &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
 &kp A,             &kp S,             &kp D,             &kp F,             &kp G,             &kp H,             &kp J,             &kp K,             &kp L,             &kp SQT,           \
 &kp Z,             &kp X,             &kp C,             &kp V,             &kp B,             &kp N,             &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,         \
-U_NP,              U_NP,              &kp DEL,           &kp BSPC,          &kp RET,           &kp TAB,           &kp SPACE,         &kp ESC,           U_NP,              U_NP
+U_NP,              U_NP,              &kp DEL,           &kp RET,           &kp BSPC,          &kp SPACE,         &kp TAB,           &kp ESC,           U_NP,              U_NP
 
 #define MIRYOKU_ALTERNATIVES_TAP_QWERTZ_FLIP \
 &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Z,             &kp U,             &kp I,             &kp O,             &kp P,             \
