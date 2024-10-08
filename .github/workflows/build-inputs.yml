@@ -13,7 +13,7 @@ on:
         description: 'shield'
         required: false
         default: 'corne_left nice_view_adapter nice_view,corne_right nice_view_adapter nice_view'
-      alphas:
+      tap:
         description: 'alphas'
         required: false
         default: 'QWERTY'
