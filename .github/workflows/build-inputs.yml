@@ -16,10 +16,8 @@ on:
       alphas:
         description: 'alphas'
         required: false
-        default: 'QWERTY'
         type: choice
         options:
-        - "default"
         - "AZERTY"
         - "BEAKL15"
         - "Colemak"
@@ -32,9 +30,7 @@ on:
       tap:
         description: 'tap'
         required: false
-        default: 'QWERTY'
         type: choice
-        - "default"
         - "azerty"
         - "beakl15"
         - "colemak"
