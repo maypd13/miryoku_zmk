@@ -13,19 +13,22 @@ on:
         description: 'shield'
         required: false
         default: 'corne_left nice_view_adapter nice_view,corne_right nice_view_adapter nice_view'
-      tap:
-        description: 'tap'
+      alphas:
+        description: 'alphas'
         required: false
+        default: 'QWERTY'
         type: choice
-        - "azerty"
-        - "beakl15"
-        - "colemak"
-        - "colemakdhk"
-        - "dvorak"
-        - "halmak"
-        - "qwerty"
-        - "qwertz"
-        - "workman"
+        options:
+        - "default"
+        - "AZERTY"
+        - "BEAKL15"
+        - "Colemak"
+        - "ColemakDHK"
+        - "Dvorak"
+        - "Halmak"
+        - "QWERTY"
+        - "QWERTZ"
+        - "Workman"
       nav:
         description: 'nav'
         required: false
@@ -69,7 +72,7 @@ jobs:
     outputs:
       board: ${{ steps.process-inputs.outputs.board }}
       shield: ${{ steps.process-inputs.outputs.shield }}
-      tap: ${{ steps.process-inputs.outputs.tap }}
+      alphas: ${{ steps.process-inputs.outputs.alphas }}
       nav: ${{ steps.process-inputs.outputs.nav }}
       layers: ${{ steps.process-inputs.outputs.layers }}
       mapping: ${{ steps.process-inputs.outputs.mapping }}
@@ -88,7 +91,7 @@ jobs:
           }
           set-output "board" "${{ github.event.inputs.board }}"
           set-output "shield" "${{ github.event.inputs.shield }}"
-          set-output "tap" "${{ github.event.inputs.tap }}"
+          set-output "alphas" "${{ github.event.inputs.alphas }}"
           set-output "nav" "${{ github.event.inputs.nav }}"
           set-output "layers" "${{ github.event.inputs.layers }}"
           set-output "mapping" "${{ github.event.inputs.mapping }}"
@@ -103,7 +106,7 @@ jobs:
     with:
       board: ${{ needs.process-inputs.outputs.board }}
       shield: ${{ needs.process-inputs.outputs.shield }}
-      tap: ${{ needs.process-inputs.outputs.tap }}
+      alphas: ${{ needs.process-inputs.outputs.alphas }}
       nav: ${{ needs.process-inputs.outputs.nav }}
       layers: ${{ needs.process-inputs.outputs.layers }}
       mapping: ${{ needs.process-inputs.outputs.mapping }}
