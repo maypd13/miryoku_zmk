@@ -13,7 +13,7 @@ on:
         description: 'shield'
         required: false
         default: 'corne_left nice_view_adapter nice_view,corne_right nice_view_adapter nice_view'
-      tap:
+      alphas:
         description: 'alphas'
         required: false
         default: 'QWERTY'
@@ -29,6 +29,21 @@ on:
         - "QWERTY"
         - "QWERTZ"
         - "Workman"
+      tap:
+        description: 'tap'
+        required: false
+        default: 'QWERTY'
+        type: choice
+        - "default"
+        - "azerty"
+        - "beakl15"
+        - "colemak"
+        - "colemakdhk"
+        - "dvorak"
+        - "halmak"
+        - "qwerty"
+        - "qwertz"
+        - "workman"
       nav:
         description: 'nav'
         required: false
