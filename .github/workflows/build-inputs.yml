@@ -69,7 +69,7 @@ jobs:
     outputs:
       board: ${{ steps.process-inputs.outputs.board }}
       shield: ${{ steps.process-inputs.outputs.shield }}
-      alphas: ${{ steps.process-inputs.outputs.alphas }}
+      tap: ${{ steps.process-inputs.outputs.tap }}
       nav: ${{ steps.process-inputs.outputs.nav }}
       layers: ${{ steps.process-inputs.outputs.layers }}
       mapping: ${{ steps.process-inputs.outputs.mapping }}
@@ -88,7 +88,7 @@ jobs:
           }
           set-output "board" "${{ github.event.inputs.board }}"
           set-output "shield" "${{ github.event.inputs.shield }}"
-          set-output "alphas" "${{ github.event.inputs.alphas }}"
+          set-output "tap" "${{ github.event.inputs.tap }}"
           set-output "nav" "${{ github.event.inputs.nav }}"
           set-output "layers" "${{ github.event.inputs.layers }}"
           set-output "mapping" "${{ github.event.inputs.mapping }}"
@@ -103,7 +103,7 @@ jobs:
     with:
       board: ${{ needs.process-inputs.outputs.board }}
       shield: ${{ needs.process-inputs.outputs.shield }}
-      alphas: ${{ needs.process-inputs.outputs.alphas }}
+      tap: ${{ needs.process-inputs.outputs.tap }}
       nav: ${{ needs.process-inputs.outputs.nav }}
       layers: ${{ needs.process-inputs.outputs.layers }}
       mapping: ${{ needs.process-inputs.outputs.mapping }}
