@@ -13,20 +13,6 @@ on:
         description: 'shield'
         required: false
         default: 'corne_left nice_view_adapter nice_view,corne_right nice_view_adapter nice_view'
-      alphas:
-        description: 'alphas'
-        required: false
-        type: choice
-        options:
-        - "AZERTY"
-        - "BEAKL15"
-        - "Colemak"
-        - "ColemakDHK"
-        - "Dvorak"
-        - "Halmak"
-        - "QWERTY"
-        - "QWERTZ"
-        - "Workman"
       tap:
         description: 'tap'
         required: false
